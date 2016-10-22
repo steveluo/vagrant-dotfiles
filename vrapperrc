@@ -1,0 +1,37 @@
+" vim:ft=vim
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set tabstop=4
+set shiftwidth=4
+
+nnoremap 0 ^
+nnoremap ^ 0
+nnoremap H 00
+nnoremap L $
+nnoremap Y y$
+nnoremap // :nohlsearch<CR>
+nnoremap ;w :w<CR>
+vnoremap Y "+y
+
+
+nnoremap <C-DOWN> :.,.m<space>.+1<cr>
+nnoremap <C-UP> :.,.m<space>.-2<cr>
+vnoremap <C-DOWN> :m<space>.+1<cr>gv
+vnoremap <C-UP> :m<space>.-2<cr>kgv]
+
+" show documentation for current symbol
+eclipseuiaction eclipseshowdoc org.eclipse.ui.edit.text.showInformation
+nnoremap K   :eclipseshowdoc<cr>
+
+" Open local vim
+nnoremap <m-v> :vim<cr>
+set autochdir
+set cleanindent
+set contentassistmode
+set gvimpath=/usr/local/bin/mvim
+
+" source .vrapperrc.local

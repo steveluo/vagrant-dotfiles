@@ -1,0 +1,76 @@
+if &compatible
+  set nocompatible
+end
+
+call plug#begin('~/.vim/bundle')
+
+" Enhancement
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'pbrisbin/vim-mkdir'
+" Plug 'christoomey/vim-run-interactive'
+Plug 'godlygeek/tabular'
+Plug 'tomtom/tcomment_vim'
+" Plug 'vim-scripts/sudo.vim'
+" Plug 'vim-scripts/lastpos.vim'
+" Plug 'skwp/YankRing.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ntpeters/vim-better-whitespace'
+" Plug 'MarcWeber/vim-addon-mw-utils'
+" Plug 'tomtom/tlib_vim'
+" Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'austintaylor/vim-indentobject'
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-scripts/BufOnly.vim'
+" Plug 'AndrewRadev/splitjoin.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'junegunn/vim-easy-align'
+" Plug 'junegunn/vim-emoji'
+
+
+" Language
+Plug 'sheerun/vim-polyglot'
+Plug 'Chiel92/vim-autoformat'
+" Plug 'mustache/vim-mustache-handlebars'
+Plug 'duganchen/vim-soy'
+Plug 'mattn/emmet-vim'
+" Plug 'spf13/vim-preview'
+" Plug 'pangloss/vim-javascript'
+" Plug 'skammer/vim-css-color'
+" Plug 'wookiehangover/jshint.vim'
+
+" Auto-complete
+Plug 'Shougo/neocomplete'
+
+" Search
+Plug 'easymotion/vim-easymotion'
+Plug 'rking/ag.vim'
+Plug 'vim-scripts/matchit.zip'
+" Plug 'vim-scripts/greplace.vim'
+
+
+" Project
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'FelikZ/ctrlp-py-matcher'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" Notes
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-notes'
+
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+call plug#end()

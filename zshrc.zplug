@@ -1,0 +1,55 @@
+if [[ -f $HOME/.zsh/zplug/zplug ]]; then
+    source $HOME/.zsh/zplug/zplug
+
+    PURE_CMD_MAX_EXEC_TIME=1
+
+    # zplug "zsh-users/zsh-syntax-highlighting-filetypes"
+    # zplug "zsh-users/tmux-mem-cpu-load"
+    #
+    # zplug "junegunn/fzf-bin", \
+    #       as:command, \
+    #       from:gh-r, \
+    #       file:"fzf", \
+    #       frozen:1
+    #
+    # zplug "b4b4r07/enhancd", \
+    #     of:enhancd.sh
+
+
+    # zplug "mollifier/zload"
+    zplug "zsh-users/zsh-syntax-highlighting"
+    zplug "zsh-users/zaw"
+    zplug "zsh-users/zsh-completions"
+    zplug "zsh-users/zsh-history-substring-search"
+
+    # zplug "plugins/safe-paste", from:oh-my-zsh
+    # zplug "plugins/command-not-found", from:oh-my-zsh
+    # zplug "plugins/extract", from:oh-my-zsh
+    # zplug "plugins/colorize", from:oh-my-zsh
+    # zplug "plugins/brew", from:oh-my-zsh, if:"[[ $(uname) =~ ^Darwin ]]"
+    # zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $(uname) =~ ^Darwin ]]"
+    # zplug "plugins/vagrant", from:oh-my-zsh
+    # zplug "plugins/aws", from:oh-my-zsh
+    # zplug "plugins/tmux", from:oh-my-zsh
+    # zplug "plugins/vi-mode", from:oh-my-zsh
+
+    zplug "zsh-users/zsh-autosuggestions"
+
+    # zplug "peco/peco", as:command, from:gh-r
+
+    zplug "mafredri/zsh-async"
+    zplug "sindresorhus/pure"
+
+    # Install plugins that have not been installed yet
+    if ! zplug check --verbose; then
+        printf "Install? [y/N]: "
+        if read -q; then
+            echo; zplug install
+        fi
+    fi
+
+    zplug load --verbose
+fi
+
+
+# vim:fdm=marker

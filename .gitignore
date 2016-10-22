@@ -1,0 +1,10 @@
+vim/bundle
+.yankring*
+undo
+vim/viminfo
+
+*.logvim/viminfo
+zsh/.zsh_history
+.netrwhist
+.yankring_history_v2.txt
+autoload/plug.vim.old

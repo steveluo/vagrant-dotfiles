@@ -1,0 +1,14 @@
+*.log
+node_modules
+bower_components
+releases
+*.scssc
+tmp
+DefinitelyTyped
+Deps
+
+target
+
+.git
+.svn
+.hg
