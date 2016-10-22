@@ -1,1 +1,1 @@
-the basic dotfiles for vagrant box
+My basic dot files with configuration for vim zsh and git.
