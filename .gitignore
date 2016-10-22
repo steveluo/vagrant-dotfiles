@@ -1,4 +1,6 @@
 vim/bundle
+vim/autoload
+vim/backup
 .yankring*
 undo
 vim/viminfo
