@@ -24,6 +24,12 @@ export MANPAGER="less -X"
 # Always enable colored `grep` output
 export GREP_OPTIONS='--color=auto'
 
+# Maven Options
+export MAVEN_HOME=/opt/java/maven/current
+export ANT_HOME=/opt/java/ant/current
+
+export NVM_DIR="/srv/config/nvm"
+
 # Get operating system
 platform='unknown'
 case "$(uname -s)" in
@@ -43,6 +49,8 @@ case "$(uname -s)" in
     platform='unknown'
     ;;
 esac
+
+export PATH=$PATH:$MAVEN_HOME/bin:$ANT_HOME/bin
 
 if [[ $platform == 'darwin' ]]; then
   export PATH=$PATH:/usr/local/sbin:~/Library/Ruby/Gems/1.8/bin:/opt/ImageMagick/bin
