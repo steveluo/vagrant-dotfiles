@@ -1,0 +1,5 @@
+" set ft=vim
+" vimrc only for installation
+
+let g:plug_threads = 1
+source ~/.vimrc.bundles
