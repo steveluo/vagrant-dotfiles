@@ -37,5 +37,4 @@ antigen apply
 
 fpath=(~/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-completions.git/src $fpath)
 
-
-zle -N zle-line-init
+# zle -N zle-line-init
